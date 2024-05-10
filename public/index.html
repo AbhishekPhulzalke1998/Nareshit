@@ -50,76 +50,15 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet"  href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <script src="../node_modules/react/umd/react.development.js"></script>
-    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="../node_modules/react-dom/umd/react-dom.development.js"></script>z
     <script src="../node_modules/@babel/standalone/babel.js"></script>
     <script type="text/jsx">
-
-        function HeaderComponent()
-        {
-            return(
-                <header className="p-3 d-flex justify-content-between">
-                     <div className="brand-title">NETFLIX</div>
-                     <div className="d-flex">
-                          <div className="dropdown me-3">
-                           <button className=" btn btn-dark dropdown-toggle">
-                             <span className="bi bi-globe"></span>
-                             Language
-                           </button>
-                          </div>
-                          <div>
-                          <button className="btn btn-danger">
-                            Signin
-                          </button>
-                        </div>
-                        </div>
-                </header>
-            )
-        }
+ 
+      import {IndexComponent} from "../src/IndexComponent.js";
                
-        function MainComponent()
-        {
-            return(
-                <main>
-                    <div>
-                    <h1>Unlimited Movies TV shows and more.</h1>
-                    <p>Watch anywhere.Cancel anttime</p>
-                    <RegistreComponent />
-                    </div>
-                </main>
-            )
-        }
+      
 
-        function RegistreComponent()
-        {
-            return (
-                <div className="register-box">
-             <p>Ready to watch? Enter your email to create or restart your membership</p>
-                <div className="input-group input-group-lg">
-                    <input type="email" placeholder="your email Address"  className="form-control"/>
-                    <button className="btn btn-danger">
-                        Get Started <span className="bi bi-chevron-right"></span>
-                    </button>
-                </div>
-
-
-
-                </div>
-            )
-        }
-
-        function IndexComponent() {
-            return (
-                <div className="NetFlix-back">
-                      <section>
-                        <HeaderComponent />
-                        <MainComponent />
-                       
-                 
-                      </section>
-                      
-                </div>
-            );
-        }
+        
 
         const root = ReactDOM.createRoot(document.getElementById("root"));
         root.render(<IndexComponent />);
